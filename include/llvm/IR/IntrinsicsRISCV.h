@@ -13,7 +13,7 @@ namespace llvm {
 namespace Intrinsic {
 enum RISCVIntrinsics : unsigned {
 // Enum values for intrinsics
-    riscv_masked_atomicrmw_add_i32 = 6621,            // llvm.riscv.masked.atomicrmw.add.i32
+    riscv_masked_atomicrmw_add_i32 = 6622,            // llvm.riscv.masked.atomicrmw.add.i32
     riscv_masked_atomicrmw_add_i64,            // llvm.riscv.masked.atomicrmw.add.i64
     riscv_masked_atomicrmw_max_i32,            // llvm.riscv.masked.atomicrmw.max.i32
     riscv_masked_atomicrmw_max_i64,            // llvm.riscv.masked.atomicrmw.max.i64
@@ -38,6 +38,24 @@ enum RISCVIntrinsics : unsigned {
     riscv_vadc,                                // llvm.riscv.vadc
     riscv_vadd,                                // llvm.riscv.vadd
     riscv_vadd_mask,                           // llvm.riscv.vadd.mask
+    riscv_vamoadd,                             // llvm.riscv.vamoadd
+    riscv_vamoadd_mask,                        // llvm.riscv.vamoadd.mask
+    riscv_vamoand,                             // llvm.riscv.vamoand
+    riscv_vamoand_mask,                        // llvm.riscv.vamoand.mask
+    riscv_vamomax,                             // llvm.riscv.vamomax
+    riscv_vamomax_mask,                        // llvm.riscv.vamomax.mask
+    riscv_vamomaxu,                            // llvm.riscv.vamomaxu
+    riscv_vamomaxu_mask,                       // llvm.riscv.vamomaxu.mask
+    riscv_vamomin,                             // llvm.riscv.vamomin
+    riscv_vamomin_mask,                        // llvm.riscv.vamomin.mask
+    riscv_vamominu,                            // llvm.riscv.vamominu
+    riscv_vamominu_mask,                       // llvm.riscv.vamominu.mask
+    riscv_vamoor,                              // llvm.riscv.vamoor
+    riscv_vamoor_mask,                         // llvm.riscv.vamoor.mask
+    riscv_vamoswap,                            // llvm.riscv.vamoswap
+    riscv_vamoswap_mask,                       // llvm.riscv.vamoswap.mask
+    riscv_vamoxor,                             // llvm.riscv.vamoxor
+    riscv_vamoxor_mask,                        // llvm.riscv.vamoxor.mask
     riscv_vand,                                // llvm.riscv.vand
     riscv_vand_mask,                           // llvm.riscv.vand.mask
     riscv_vasub,                               // llvm.riscv.vasub

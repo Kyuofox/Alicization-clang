@@ -916,6 +916,14 @@ public:
   
     }
 
+    case TemplateArgument::UncommonValue: {
+    APValue value = subR.find("value").readAPValue();
+    QualType type = subR.find("type").readQualType();
+    
+    return TemplateArgument(ctx, type, value);
+  
+    }
+
     case TemplateArgument::Template: {
     TemplateName name = subR.find("name").readTemplateName();
     

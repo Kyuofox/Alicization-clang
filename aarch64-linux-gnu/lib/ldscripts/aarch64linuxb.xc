@@ -1,5 +1,5 @@
 /* Script for -z combreloc */
-/* Copyright (C) 2014-2020 Free Software Foundation, Inc.
+/* Copyright (C) 2014-2021 Free Software Foundation, Inc.
    Copying and distribution of this script, with or without modification,
    are permitted in any medium without royalty provided the copyright
    notice and this notice are preserved.  */
@@ -7,7 +7,7 @@ OUTPUT_FORMAT("elf64-bigaarch64", "elf64-bigaarch64",
 	      "elf64-littleaarch64")
 OUTPUT_ARCH(aarch64)
 ENTRY(_start)
-SEARCH_DIR("/usr/local/aarch64-linux-gnu/lib64"); SEARCH_DIR("/usr/local/aarch64-linux-gnu/lib");
+SEARCH_DIR("=/home/foxhuyu/tc-build/installTmp/aarch64-linux-gnu/lib64"); SEARCH_DIR("=/usr/local/lib64"); SEARCH_DIR("=/lib64"); SEARCH_DIR("=/usr/lib64"); SEARCH_DIR("=/home/foxhuyu/tc-build/installTmp/aarch64-linux-gnu/lib"); SEARCH_DIR("=/usr/local/lib"); SEARCH_DIR("=/lib"); SEARCH_DIR("=/usr/lib");
 SECTIONS
 {
   /* Read-only sections, merged into text segment: */

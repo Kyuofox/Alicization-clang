@@ -1116,6 +1116,14 @@ public:
     return;
     }
 
+    case TemplateArgument::UncommonValue: {
+    APValue value = ( node.getAsUncommonValue() );
+    subW.find("value").writeAPValue(value);
+    QualType type = ( node.getUncommonValueType() );
+    subW.find("type").writeQualType(type);
+    return;
+    }
+
     case TemplateArgument::Template: {
     TemplateName name = ( node.getAsTemplateOrTemplatePattern() );
     subW.find("name").writeTemplateName(name);
